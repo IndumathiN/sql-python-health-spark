@@ -28,7 +28,7 @@ export const HeroSection = () => {
     // Simulate API call - replace with actual webhook/API integration
     try {
       // This is where you'd integrate with n8n webhook or Mailchimp API
-      const response = await fetch("/api/signup", {
+      const response = await fetch("https://mite-kind-neatly.ngrok-free.app/webhook-test/getEmail", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email }),
